@@ -52,18 +52,18 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
                     <div class="navbar-nav ml-auto py-0">
-                        <a href="index.html" class="nav-item nav-link active">Home</a>
-                        <a href="about.html" class="nav-item nav-link">About</a>
-                        <a href="service.html" class="nav-item nav-link">Service</a>
-                        <a href="project.html" class="nav-item nav-link">Project</a>
+                        <a href="index.php" class="nav-item nav-link active">Home</a>
+                        <a href="about.php" class="nav-item nav-link">About</a>
+                        <a href="service.php" class="nav-item nav-link">Service</a>
+                        <a href="project.php" class="nav-item nav-link">Project</a>
                         <!-- <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Projects</a>
                             <div class="dropdown-menu rounded-0 m-0">
-                                <a href="blog.html" class="dropdown-item">Blog Grid</a>
-                                <a href="single.html" class="dropdown-item">Blog Detail</a>
+                                <a href="residental.php" class="dropdown-item">Residential</a>
+                                <a href="commercial.php" class="dropdown-item">Commercial</a>
                             </div>
                         </div> -->
-                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                        <a href="contact.php" class="nav-item nav-link">Contact</a>
                     </div>
                 </div>
             </nav>
@@ -73,14 +73,14 @@
 
 
     <!-- Under Nav Start -->
-    <div class="container-fluid bg-white py-3">
+    <div class="container-fluid bg-dark py-3">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 text-left mb-3 mb-lg-0">
                     <div class="d-inline-flex text-left">
                         <h1 class="flaticon-office font-weight-normal text-primary m-0 mr-3"></h1>
                         <div class="d-flex flex-column">
-                            <h5>Our Office</h5>
+                            <h5 class="text-light">Our Office</h5>
                             <a href="https://maps.app.goo.gl/gU12t6XoYKTUFRdH9" target="_blank" class="m-0">Vadodara, Gujarat</a>
                         </div>
                     </div>
@@ -89,7 +89,7 @@
                     <div class="d-inline-flex text-left">
                         <h1 class="flaticon-email font-weight-normal text-primary m-0 mr-3"></h1>
                         <div class="d-flex flex-column">
-                            <h5>Email Us</h5>
+                            <h5 class="text-light">Email Us</h5>
                             <a href="mailto:inhouseinterio@gmail.com" class="m-0">inhouseinterio@gmail.com</a>
                         </div>
                     </div>
@@ -98,7 +98,7 @@
                     <div class="d-inline-flex text-left">
                         <h1 class="flaticon-telephone font-weight-normal text-primary m-0 mr-3"></h1>
                         <div class="d-flex flex-column">
-                            <h5>Call Us</h5>
+                            <h5 class="text-light">Call Us</h5>
                             <a href="tel:+918155067877" class="m-0">+91 81550 67877</a>
                         </div>
                     </div>

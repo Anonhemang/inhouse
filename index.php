@@ -84,13 +84,13 @@
                 <div class="col-lg-5">
                     <div
                         class="d-flex flex-column align-items-center justify-content-center bg-primary h-100 py-5 px-3">
-                        <h4 class="display-3 mb-3">50+</h4>
-                        <h1 class="m-0">Years Experience</h1>
+                        <h4 class="display-3 mb-3 text-light">50+</h4>
+                        <h1 class="m-0 text-light">Years Experience</h1>
                     </div>
                 </div>
                 <div class="col-lg-7 m-0 my-lg-5 pt-5 pb-5 pb-lg-2 pl-lg-5">
                     <h6 class="text-primary font-weight-normal text-uppercase mb-3">Learn About Us</h6>
-                    <h1 class="mb-4 section-title">We Are The Best Interior Designing Firm In Your City</h1>
+                    <h1 class="mb-4 section-title text-light">We Are The Best Interior Designing Firm In Your City</h1>
                     <p>Invidunt lorem justo sanctus clita. Erat lorem labore ea, justo dolor lorem ipsum ut sed eos,
                         ipsum et dolor kasd sit ea justo. Erat justo sed sed diam. Ea et erat ut sed diam sea ipsum est
                         dolor</p>
@@ -98,25 +98,25 @@
                         <div class="col-sm-6">
                             <div class="d-flex align-items-center mb-4">
 
-                                <h5 class="m-0" style="font-weight:bold!important"><i class="far fa-check-square text-primary mr-3"></i>Project Planning</h5>
+                                <h5 class="m-0 text-light" style="font-weight:bold!important"><i class="far fa-check-square text-primary mr-3"></i>Project Planning</h5>
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <div class="d-flex align-items-center mb-4">
 
-                                <h5 class="m-0" style="font-weight:bold!important"><i class="far fa-check-square text-primary mr-3"></i>Exterior & Interior</h5>
+                                <h5 class="m-0 text-light" style="font-weight:bold!important"><i class="far fa-check-square text-primary mr-3"></i>Exterior & Interior</h5>
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <div class="d-flex align-items-center mb-4">
 
-                                <h5 class="m-0" style="font-weight:bold!important"><i class="far fa-check-square text-primary mr-3"></i>Commercial Design</h5>
+                                <h5 class="m-0 text-light" style="font-weight:bold!important"><i class="far fa-check-square text-primary mr-3"></i>Commercial Design</h5>
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <div class="d-flex align-items-center mb-4">
 
-                                <h5 class="m-0" style="font-weight:bold!important"><i class="far fa-check-square text-primary mr-3"></i>Residential Design</h5>
+                                <h5 class="m-0 text-light" style="font-weight:bold!important"><i class="far fa-check-square text-primary mr-3"></i>Residential Design</h5>
                             </div>
                         </div>
                     </div>
@@ -133,7 +133,7 @@
             <div class="">
                 <div class="">
                     <h6 class="text-primary font-weight-normal text-uppercase mb-3">Our Awesome Services</h6>
-                    <h1 class="mb-4 section-title">Upgrade Your Space with Exceptional Interior Design Services</h1>
+                    <h1 class="mb-4 section-title text-light">Upgrade Your Space with Exceptional Interior Design Services</h1>
                     <p>Interior designers group represents considerable authority in making dynamic exceptional
                         interiors for the elite group of residences and business foundations. Our designing specialists
                         work with you on a one-on-one premise to make an unparalleled living encounter, regardless of
@@ -152,17 +152,17 @@
             <div class="row">
                 <div class="col-lg-7 mt-5 py-5 pr-lg-5">
                     <h6 class="text-primary font-weight-normal text-uppercase mb-3">Why Choose Us?</h6>
-                    <h1 class="mb-4 section-title">25+ Years Experience In The Interior Design Industry</h1>
+                    <h1 class="mb-4 section-title text-light">25+ Years Experience In The Interior Design Industry</h1>
                     
                     <ul class="list-inline">
                         <li>
-                            <h5><i class="far fa-check-square text-primary mr-3"></i>50+ Years Experience</h5>
+                            <h5 class="text-light"><i class="far fa-check-square text-primary mr-3"></i>50+ Years Experience</h5>
                         </li>
                         <li>
-                            <h5><i class="far fa-check-square text-primary mr-3"></i>Expert Team of Professionals</h5>
+                            <h5 class="text-light"><i class="far fa-check-square text-primary mr-3"></i>Expert Team of Professionals</h5>
                         </li>
                         <li>
-                            <h5><i class="far fa-check-square text-primary mr-3"></i>Affordable Pricing</h5>
+                            <h5 class="text-light"><i class="far fa-check-square text-primary mr-3"></i>Affordable Pricing</h5>
                         </li>
                     </ul>
                     <a href="" class="btn btn-primary mt-3 py-2 px-4">View More</a>
@@ -184,7 +184,7 @@
             <div class="row justify-content-center">
                 <div class="col-lg-6 col-md-8 col text-center mb-4">
                     <h6 class="text-primary font-weight-normal text-uppercase mb-3">Our Projects</h6>
-                    <h1 class="mb-4">Some Of Our Awesome Interior Designing Projects</h1>
+                    <h1 class="mb-4 text-light">Some Of Our Awesome Interior Designing Projects</h1>
                 </div>
             </div>
             <div class="row mx-1 portfolio-container">
@@ -368,16 +368,16 @@
     <!-- <a href="#top" class="btn btn-lg btn-primary back-to-top"><i class="fa fa-angle-double-up"></i></a> -->
 
     <!-- JavaScript Libraries -->
-    <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
     <script src="lib/isotope/isotope.pkgd.min.js"></script>
-    <script src="lib/lightbox/js/lightbox.min.js"></script> -->
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
 
     <!-- Contact Javascript File -->
-    <!-- <script src="mail/jqBootstrapValidation.min.js"></script>
-    <script src="mail/contact.js"></script> -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
 
     <!-- Template Javascript -->
     <!-- <script src="js/main.js"></script> -->

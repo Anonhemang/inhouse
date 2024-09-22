@@ -52,9 +52,9 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #777777;
+  color: #f1f1f1;
   text-align: left;
-  background-color: #fff;
+  background-color:rgb(10, 10, 10) !important;
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -2358,7 +2358,7 @@ fieldset:disabled a.btn {
 }
 
 .btn-primary {
-  color: #212529;
+  color: #f1f1f1;
   background-color: lightseagreen;
   border-color: lightseagreen;
 }
@@ -6147,7 +6147,7 @@ button.bg-danger:focus {
 }
 
 .bg-light {
-  background-color: #F3F6FF !important;
+  background-color: #16191a !important;
 }
 
 a.bg-light:hover, a.bg-light:focus,
