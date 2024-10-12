@@ -91,9 +91,7 @@
                 <div class="col-lg-7 m-0 my-lg-5 pt-5 pb-5 pb-lg-2 pl-lg-5">
                     <h6 class="text-primary font-weight-normal text-uppercase mb-3">Learn About Us</h6>
                     <h1 class="mb-4 section-title text-light">We Are The Best Interior Designing Firm In Your City</h1>
-                    <p>Invidunt lorem justo sanctus clita. Erat lorem labore ea, justo dolor lorem ipsum ut sed eos,
-                        ipsum et dolor kasd sit ea justo. Erat justo sed sed diam. Ea et erat ut sed diam sea ipsum est
-                        dolor</p>
+                    
                     <div class="row py-2">
                         <div class="col-sm-6">
                             <div class="d-flex align-items-center mb-4">
@@ -138,7 +136,7 @@
                         interiors for the elite group of residences and business foundations. Our designing specialists
                         work with you on a one-on-one premise to make an unparalleled living encounter, regardless of
                         whether your taste is customary or the present day.</p>
-                    <a href="" class="btn btn-primary mt-3 py-2 px-4">View More</a>
+                    <a href="service.php" class="btn btn-primary mt-3 py-2 px-4">View More</a>
                 </div>
             </div>
         </div>
@@ -152,7 +150,7 @@
             <div class="row">
                 <div class="col-lg-7 mt-5 py-5 pr-lg-5">
                     <h6 class="text-primary font-weight-normal text-uppercase mb-3">Why Choose Us?</h6>
-                    <h1 class="mb-4 section-title text-light">25+ Years Experience In The Interior Design Industry</h1>
+                    <h1 class="mb-4 section-title text-light">50+ Years Experience In The Interior Design Industry</h1>
                     
                     <ul class="list-inline">
                         <li>
@@ -165,7 +163,7 @@
                             <h5 class="text-light"><i class="far fa-check-square text-primary mr-3"></i>Affordable Pricing</h5>
                         </li>
                     </ul>
-                    <a href="" class="btn btn-primary mt-3 py-2 px-4">View More</a>
+                    <a href="about.php" class="btn btn-primary mt-3 py-2 px-4">View More</a>
                 </div>
                 <div class="col-lg-5">
                     <div class="d-flex flex-column align-items-center justify-content-center h-100 overflow-hidden">

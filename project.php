@@ -1,3 +1,16 @@
+<?php
+include 'conn.php'; // Include your database connection file
+
+// Fetch all images from the database
+$sql = "SELECT id, img1 FROM images WHERE type='Commercial'"; // Adjust the SQL query based on your actual table and columns
+$result = mysqli_query($conn, $sql);
+
+// Check for errors in the query
+if (!$result) {
+    die("Database query failed: " . mysqli_error($conn));
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -24,7 +37,67 @@
     <!-- Libraries Stylesheet -->
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
 
+        .gallery-container {
+            max-width: 1200px;
+            /* margin: 0 auto;
+            padding: 20px; */
+        }
+
+
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .gallery-item {
+            flex: 1 1 calc(33.333% - 10px);
+            box-sizing: border-box;
+            overflow: hidden;
+            /* border: 2px solid #ccc; */
+            /* border-radius: 5px; */
+            max-width: 33.33%;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            max-height: 200px;
+            width: 450px;
+            display: block;
+            transition: transform 0.3s ease;
+            margin: auto;
+            filter: grayscale(70%);
+
+        }
+
+        .gallery-item img:hover {
+            transform: scale(1.05);
+            filter: grayscale(0%);
+
+        }
+
+        @media (max-width: 768px) {
+            .gallery-item {
+                flex: 1 1 calc(50% - 10px);
+                max-width: 100%;
+                margin-bottom: 3%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .gallery-item {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
 </head>
@@ -58,13 +131,10 @@
     <!-- Projects Start -->
     <!-- Commercial Project -->
     <div class="container-fluid py-5">
+        
+
+        
         <div class="container py-5">
-            <div class="row justify-content-center">
-                <div class="col-lg-6 col-md-8 col text-center mb-4">
-                    <h6 class="text-primary font-weight-normal text-uppercase mb-3">Our Projects</h6>
-                    <h1 class="mb-4 text-light">Some Of Our Awesome Interior Designing Projects</h1>
-                </div>
-            </div>
             <div class="row">
                 <div class="col-12 text-center mb-2">
                     <ul class="list-inline mb-4" id="portfolio-flters">
@@ -73,108 +143,41 @@
                 </div>
             </div>
             <div class="row mx-1 portfolio-container">
-                <div class="col-lg-4 col-md-6 col-sm-12 p-0 portfolio-item first">
-                    <div class="position-relative overflow-hidden">
-                        <div class="portfolio-img d-flex align-items-center justify-content-center">
-                            <img class="img-fluid" src="img/portfolio-1.jpg" alt="">
-                        </div>
-                        <div
-                            class="portfolio-text bg-secondary d-flex flex-column align-items-center justify-content-center">
-                            <h4 class="text-white mb-4">Project Name</h4>
-                            <div class="d-flex align-items-center justify-content-center">
-                                <a class="btn btn-outline-primary m-1" href="">
-                                    <i class="fa fa-link"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 p-0 portfolio-item second">
-                    <div class="position-relative overflow-hidden">
-                        <div class="portfolio-img d-flex align-items-center justify-content-center">
-                            <img class="img-fluid" src="img/portfolio-2.jpg" alt="">
-                        </div>
-                        <div
-                            class="portfolio-text bg-secondary d-flex flex-column align-items-center justify-content-center">
-                            <h4 class="text-white mb-4">Project Name</h4>
-                            <div class="d-flex align-items-center justify-content-center">
-                                <a class="btn btn-outline-primary m-1" href="">
-                                    <i class="fa fa-link"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 p-0 portfolio-item third">
-                    <div class="position-relative overflow-hidden">
-                        <div class="portfolio-img d-flex align-items-center justify-content-center">
-                            <img class="img-fluid" src="img/portfolio-3.jpg" alt="">
-                        </div>
-                        <div
-                            class="portfolio-text bg-secondary d-flex flex-column align-items-center justify-content-center">
-                            <h4 class="text-white mb-4">Project Name</h4>
-                            <div class="d-flex align-items-center justify-content-center">
-                                <a class="btn btn-outline-primary m-1" href="">
-                                    <i class="fa fa-link"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 p-0 portfolio-item first">
-                    <div class="position-relative overflow-hidden">
-                        <div class="portfolio-img d-flex align-items-center justify-content-center">
-                            <img class="img-fluid" src="img/portfolio-4.jpg" alt="">
-                        </div>
-                        <div
-                            class="portfolio-text bg-secondary d-flex flex-column align-items-center justify-content-center">
-                            <h4 class="text-white mb-4">Project Name</h4>
-                            <div class="d-flex align-items-center justify-content-center">
-                                <a class="btn btn-outline-primary m-1" href="">
-                                    <i class="fa fa-link"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 p-0 portfolio-item second">
-                    <div class="position-relative overflow-hidden">
-                        <div class="portfolio-img d-flex align-items-center justify-content-center">
-                            <img class="img-fluid" src="img/portfolio-5.jpg" alt="">
-                        </div>
-                        <div
-                            class="portfolio-text bg-secondary d-flex flex-column align-items-center justify-content-center">
-                            <h4 class="text-white mb-4">Project Name</h4>
-                            <div class="d-flex align-items-center justify-content-center">
-                                <a class="btn btn-outline-primary m-1" href="">
-                                    <i class="fa fa-link"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 p-0 portfolio-item third">
-                    <div class="position-relative overflow-hidden">
-                        <div class="portfolio-img d-flex align-items-center justify-content-center">
-                            <img class="img-fluid" src="img/portfolio-6.jpg" alt="">
-                        </div>
-                        <div
-                            class="portfolio-text bg-secondary d-flex flex-column align-items-center justify-content-center">
-                            <h4 class="text-white mb-4">Project Name</h4>
-                            <div class="d-flex align-items-center justify-content-center">
-                                <a class="btn btn-outline-primary m-1" href="">
-                                    <i class="fa fa-link"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <?php
+                        // Loop through the result set and display each image
+                        while ($row = mysqli_fetch_assoc($result)) {
+                            // Ensure the image path is valid
+                            if (!empty($row['img1'])) {
+                                echo '<div class="gallery-item">';
+                                // Wrap the image in an anchor tag linking to view.php and passing the image ID
+                                echo '<a href="view.php?id=' . urlencode($row['id']) . '">';
+                                echo '<img src="Admin/img/' . htmlspecialchars($row['img1']) . '" alt="Image">';
+                                echo '</a>';
+                                echo '</div>';
+                            }
+                        }
+                        ?>
             </div>
-            <a style="text-decoration: underline; color:aquamarine; font-size:25px;">View More</a>
+            <!-- <a style="text-decoration: underline; color:aquamarine; font-size:25px;">View More</a> -->
         </div>
         <!-- End Of Commercial -->
-    <hr style="background-color:aliceblue">
+        <hr style="background-color:aliceblue">
         <!-- Residential Projects -->
+        <?php
+        include 'conn.php'; // Include your database connection file
+        
+        // Fetch all images from the database
+        $sql = "SELECT id, img1 FROM images WHERE type='Residential'"; // Adjust the SQL query based on your actual table and columns
+        $result = mysqli_query($conn, $sql);
+
+        // Check for errors in the query
+        if (!$result) {
+            die("Database query failed: " . mysqli_error($conn));
+        }
+        ?>
+
+
+
         <div class="container py-5">
             <div class="row">
                 <div class="col-12 text-center mb-2">
@@ -184,104 +187,22 @@
                 </div>
             </div>
             <div class="row mx-1 portfolio-container">
-                <div class="col-lg-4 col-md-6 col-sm-12 p-0 portfolio-item first">
-                    <div class="position-relative overflow-hidden">
-                        <div class="portfolio-img d-flex align-items-center justify-content-center">
-                            <img class="img-fluid" src="img/portfolio-1.jpg" alt="">
-                        </div>
-                        <div
-                            class="portfolio-text bg-secondary d-flex flex-column align-items-center justify-content-center">
-                            <h4 class="text-white mb-4">Project Name</h4>
-                            <div class="d-flex align-items-center justify-content-center">
-                                <a class="btn btn-outline-primary m-1" href="">
-                                    <i class="fa fa-link"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 p-0 portfolio-item second">
-                    <div class="position-relative overflow-hidden">
-                        <div class="portfolio-img d-flex align-items-center justify-content-center">
-                            <img class="img-fluid" src="img/portfolio-2.jpg" alt="">
-                        </div>
-                        <div
-                            class="portfolio-text bg-secondary d-flex flex-column align-items-center justify-content-center">
-                            <h4 class="text-white mb-4">Project Name</h4>
-                            <div class="d-flex align-items-center justify-content-center">
-                                <a class="btn btn-outline-primary m-1" href="">
-                                    <i class="fa fa-link"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 p-0 portfolio-item third">
-                    <div class="position-relative overflow-hidden">
-                        <div class="portfolio-img d-flex align-items-center justify-content-center">
-                            <img class="img-fluid" src="img/portfolio-3.jpg" alt="">
-                        </div>
-                        <div
-                            class="portfolio-text bg-secondary d-flex flex-column align-items-center justify-content-center">
-                            <h4 class="text-white mb-4">Project Name</h4>
-                            <div class="d-flex align-items-center justify-content-center">
-                                <a class="btn btn-outline-primary m-1" href="">
-                                    <i class="fa fa-link"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 p-0 portfolio-item first">
-                    <div class="position-relative overflow-hidden">
-                        <div class="portfolio-img d-flex align-items-center justify-content-center">
-                            <img class="img-fluid" src="img/portfolio-4.jpg" alt="">
-                        </div>
-                        <div
-                            class="portfolio-text bg-secondary d-flex flex-column align-items-center justify-content-center">
-                            <h4 class="text-white mb-4">Project Name</h4>
-                            <div class="d-flex align-items-center justify-content-center">
-                                <a class="btn btn-outline-primary m-1" href="">
-                                    <i class="fa fa-link"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 p-0 portfolio-item second">
-                    <div class="position-relative overflow-hidden">
-                        <div class="portfolio-img d-flex align-items-center justify-content-center">
-                            <img class="img-fluid" src="img/portfolio-5.jpg" alt="">
-                        </div>
-                        <div
-                            class="portfolio-text bg-secondary d-flex flex-column align-items-center justify-content-center">
-                            <h4 class="text-white mb-4">Project Name</h4>
-                            <div class="d-flex align-items-center justify-content-center">
-                                <a class="btn btn-outline-primary m-1" href="">
-                                    <i class="fa fa-link"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 p-0 portfolio-item third">
-                    <div class="position-relative overflow-hidden">
-                        <div class="portfolio-img d-flex align-items-center justify-content-center">
-                            <img class="img-fluid" src="img/portfolio-6.jpg" alt="">
-                        </div>
-                        <div
-                            class="portfolio-text bg-secondary d-flex flex-column align-items-center justify-content-center">
-                            <h4 class="text-white mb-4">Project Name</h4>
-                            <div class="d-flex align-items-center justify-content-center">
-                                <a class="btn btn-outline-primary m-1" href="">
-                                    <i class="fa fa-link"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <?php
+                // Loop through the result set and display each image
+                while ($row = mysqli_fetch_assoc($result)) {
+                    // Ensure the image path is valid
+                    if (!empty($row['img1'])) {
+                        echo '<div class="gallery-item">';
+                        // Wrap the image in an anchor tag linking to view.php and passing the image ID
+                        echo '<a href="view.php?id=' . urlencode($row['id']) . '">';
+                        echo '<img src="Admin/img/' . htmlspecialchars($row['img1']) . '" alt="Image">';
+                        echo '</a>';
+                        echo '</div>';
+                    }
+                }
+                ?>
             </div>
-            <a style="text-decoration: underline; color:aquamarine; font-size:25px;">View More</a>
+            <!-- <a style="text-decoration: underline; color:aquamarine; font-size:25px;">View More</a> -->
         </div>
         <!-- End of Residential -->
     </div>
@@ -289,9 +210,9 @@
 
 
     <!-- Footer Start -->
-  <?php 
-  include('foot.php');
-  ?>
+    <?php
+    include('foot.php');
+    ?>
     <!-- Footer End -->
 
 
