@@ -3,40 +3,23 @@
 
 <head>
     <meta charset="utf-8">
-    <title>iDESIGN - Interior Design HTML Template</title>
+    <title>INHouse Interio | Contact Us</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="Free HTML Templates" name="keywords">
-    <meta content="Free HTML Templates" name="description">
-
-    <!-- Favicon -->
+    <meta name="keywords" content="Interior Design, Home Decor, Best Interior Designers, Interior Decorating">
+    <meta name="description"
+        content="Explore the top interior designers who can transform your space into a stylish and functional haven. Discover innovative designs, expert tips, and inspiring ideas for your home.">
     <link href="img/favicon.ico" rel="icon">
-
-    <!-- Google Web Fonts -->
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@400;500;600&display=swap"
-        rel="stylesheet"> -->
-
-    <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-
-    <!-- Flaticon Font -->
     <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
-
-    <!-- Libraries Stylesheet -->
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
-
-    <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
-
     <?php
     include('header.php');
     ?>
-
-
-    <!-- Page Header Start -->
     <div class="container-fluid bg-secondary py-5">
         <div class="container py-5">
             <div class="row align-items-center py-4">
@@ -53,10 +36,6 @@
             </div>
         </div>
     </div>
-    <!-- Page Header Start -->
-
-
-    <!-- Contact Start -->
     <div class="container-fluid">
         <div class="container">
             <div class="row">
@@ -66,21 +45,25 @@
                             <h1 class="flaticon-office font-weight-normal text-secondary m-0 mr-3"></h1>
                             <div class="d-flex flex-column">
                                 <h4>Our Office</h4>
-                                <p class="m-0 text-white">123 Street, New York, USA</p>
+                                <a href="https://maps.app.goo.gl/gU12t6XoYKTUFRdH9" target="_blank"
+                                    class="m-0 text-light text-decoration-none">FF1, Drasfti Complex, Aryakanya 3 Rasta,
+                                    Opp. Apollo Tyre Showroom, Karelibaug, Vadodara-390018.</a>
                             </div>
                         </div>
                         <div class="d-inline-flex border border-secondary p-4 mb-4">
                             <h1 class="flaticon-email font-weight-normal text-secondary m-0 mr-3"></h1>
                             <div class="d-flex flex-column">
                                 <h4>Email Us</h4>
-                                <p class="m-0 text-white">info@example.com</p>
+                                <a href="mailto:inhouseinterio@gmail.com"
+                                    class="m-0 text-light text-decoration-none">inhouseinterio@gmail.com</a>
                             </div>
                         </div>
                         <div class="d-inline-flex border border-secondary p-4">
                             <h1 class="flaticon-telephone font-weight-normal text-secondary m-0 mr-3"></h1>
                             <div class="d-flex flex-column">
                                 <h4>Call Us</h4>
-                                <p class="m-0 text-white">+012 345 6789</p>
+                                <a href="tel:+918155067877" class="m-0 text-light text-decoration-none">+91 81550
+                                    67877</a>
                             </div>
                         </div>
                     </div>
@@ -90,23 +73,26 @@
                         <div id="success"></div>
                         <form name="sentMessage" id="contactForm" novalidate="novalidate">
                             <div class="control-group">
-                                <input type="text" style="background-color: transparent;color:white" class="form-control p-4" id="name" placeholder="Your Name"
-                                    required="required" data-validation-required-message="Please enter your name" />
+                                <input type="text" style="background-color: transparent;color:white"
+                                    class="form-control p-4" id="name" placeholder="Your Name" required="required"
+                                    data-validation-required-message="Please enter your name" />
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div class="control-group">
-                                <input type="email" style="background-color: transparent;color:white" class="form-control p-4" id="email" placeholder="Your Email"
-                                    required="required" data-validation-required-message="Please enter your email" />
+                                <input type="email" style="background-color: transparent;color:white"
+                                    class="form-control p-4" id="email" placeholder="Your Email" required="required"
+                                    data-validation-required-message="Please enter your email" />
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div class="control-group">
-                                <input type="text" style="background-color: transparent;color:white" class="form-control p-4" id="subject" placeholder="Subject"
-                                    required="required" data-validation-required-message="Please enter a subject" />
+                                <input type="text" style="background-color: transparent;color:white"
+                                    class="form-control p-4" id="subject" placeholder="Subject" required="required"
+                                    data-validation-required-message="Please enter a subject" />
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div class="control-group">
-                                <textarea class="form-control p-4" style="background-color: transparent;color:white" rows="6" id="message" placeholder="Message"
-                                    required="required"
+                                <textarea class="form-control p-4" style="background-color: transparent;color:white"
+                                    rows="6" id="message" placeholder="Message" required="required"
                                     data-validation-required-message="Please enter your message"></textarea>
                                 <p class="help-block text-danger"></p>
                             </div>
@@ -120,33 +106,18 @@
             </div>
         </div>
     </div>
-    <!-- Contact End -->
-
-
-    <!-- Footer Start -->
     <?php
     include("foot.php")
-    ?>
-    <!-- Footer End -->
-
-
-    <!-- Back to Top -->
+        ?>
     <a href="#" class="btn btn-lg btn-primary back-to-top"><i class="fa fa-angle-double-up"></i></a>
-
-
-    <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
     <script src="lib/isotope/isotope.pkgd.min.js"></script>
     <script src="lib/lightbox/js/lightbox.min.js"></script>
-
-    <!-- Contact Javascript File -->
     <script src="mail/jqBootstrapValidation.min.js"></script>
     <script src="mail/contact.js"></script>
-
-    <!-- Template Javascript -->
     <script src="js/main.js"></script>
 </body>
 

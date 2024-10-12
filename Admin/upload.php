@@ -11,6 +11,13 @@
             padding: 20px;
         }
 
+        html,
+        body {
+            background-color: #131516;
+            color: aliceblue;
+
+        }
+
         .upload-form {
             margin: 20px 0;
         }
@@ -24,7 +31,8 @@
             padding: 1%;
             border-radius: 15px;
         }
-        .type{
+
+        .type {
             width: 80%;
             margin: 1% 0;
             font-size: 12px;

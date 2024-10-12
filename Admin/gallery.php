@@ -45,6 +45,10 @@ $images = mysqli_fetch_all($result, MYSQLI_ASSOC); // Store all images in an arr
             font-family: Arial, sans-serif;
         }
 
+        html,body{
+            background-color: #131516;
+            color: aliceblue!important;
+        }
         table {
             width: 90%;
             margin: 20px auto;
@@ -157,6 +161,8 @@ $images = mysqli_fetch_all($result, MYSQLI_ASSOC); // Store all images in an arr
             border: 1px solid #ddd;
             width: 80%;
             max-width: 400px;
+            background-color: transparent;
+            color: #f2f2f2;
         }
     </style>
 </head>

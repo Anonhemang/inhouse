@@ -93,6 +93,10 @@ if (isset($_POST['update'])) {
             background-color: #f0f4f8;
             color: #333;
         }
+        html,body{
+            background-color: #131516;
+            color: #f0f4f8;
+        }
 
         h1 {
             text-align: center;
@@ -103,9 +107,9 @@ if (isset($_POST['update'])) {
         form {
             width: 80%;
             margin: 0 auto;
-            background: white;
+            background: transparent;
             border-radius: 10px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 20px rgba(225, 225, 225, 0.1);
             padding: 30px;
         }
 
@@ -113,7 +117,6 @@ if (isset($_POST['update'])) {
             font-weight: bold;
             margin-top: 15px;
             display: block;
-            color: #555;
         }
 
         .image-container {

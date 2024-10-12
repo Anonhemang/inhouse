@@ -7,6 +7,9 @@
     <title>Toggle Sidebar Navbar</title>
     <link rel="stylesheet" href="style.css">
     <style>
+        html,body{
+            background-color: #131516;
+        }
         /* Styling the sidebar */
         .sidebar {
             height: 100%;

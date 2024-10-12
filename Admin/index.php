@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>index</title>
     <style>
+        html,body{
+            background-color: #131516;
+        }
         .gallery {
             width: auto;
             margin: 7%;

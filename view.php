@@ -41,19 +41,13 @@ mysqli_close($conn);
 
 <head>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-
-    <!-- Flaticon Font -->
     <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
-
-    <!-- Libraries Stylesheet -->
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
-
-    <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Gallery</title>
+    <title>INHouse Interio | Image Gallery</title>
     <style>
         .all {
             width: 100%;
@@ -196,12 +190,12 @@ mysqli_close($conn);
 </head>
 
 <body>
-    <?php 
+    <?php
     include('header.php');
     ?>
     <div class="all">
         <div class="gallery-container">
-            <!-- Thumbnails on the left side -->
+
             <div class="thumbnails">
                 <?php foreach ($images as $index => $image): ?>
                     <?php if ($image): ?>
@@ -210,22 +204,17 @@ mysqli_close($conn);
                     <?php endif; ?>
                 <?php endforeach; ?>
             </div>
-
-            <!-- Main image on the right side -->
             <div class="main-image">
                 <img id="mainImage" src="Admin/img/<?php echo $images[0]; ?>" alt="Select Image To View"
                     onclick="openModal()">
             </div>
         </div>
-
-        <!-- Modal -->
         <div id="imageModal" class="modal">
             <span class="close-btn" onclick="closeModal()">&#10006;</span>
             <span class="arrow arrow-left" onclick="prevImage()">&#10094;</span>
             <img id="modalImage" src="">
             <span class="arrow arrow-right" onclick="nextImage()">&#10095;</span>
         </div>
-
         <script>
             const images = <?php echo json_encode($images); ?>;
             let currentIndex = 0;
@@ -234,7 +223,6 @@ mysqli_close($conn);
                 currentIndex = index;
                 document.getElementById('mainImage').src = 'Admin/img/' + images[index];
             }
-
             function openModal() {
                 const modal = document.getElementById('imageModal');
                 const modalImage = document.getElementById('modalImage');
@@ -242,22 +230,18 @@ mysqli_close($conn);
                 modalImage.src = 'Admin/img/' + images[currentIndex];
                 document.body.style.overflow = 'hidden';
             }
-
             function closeModal() {
                 document.getElementById('imageModal').style.display = 'none';
                 document.body.style.overflow = '';
             }
-
             function nextImage() {
                 currentIndex = (currentIndex + 1) % images.length;
                 document.getElementById('modalImage').src = 'Admin/img/' + images[currentIndex];
             }
-
             function prevImage() {
                 currentIndex = (currentIndex - 1 + images.length) % images.length;
                 document.getElementById('modalImage').src = 'Admin/img/' + images[currentIndex];
             }
-
             window.onclick = function (event) {
                 const modal = document.getElementById('imageModal');
                 if (event.target === modal) {
@@ -266,27 +250,20 @@ mysqli_close($conn);
             };
         </script>
     </div>
-    <?php 
+    <?php
     include('foot.php')
-    ?>
+        ?>
 
-<a href="#" class="btn btn-lg btn-primary back-to-top"><i class="fa fa-angle-double-up"></i></a>
-
-
-<!-- JavaScript Libraries -->
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-<script src="lib/easing/easing.min.js"></script>
-<script src="lib/owlcarousel/owl.carousel.min.js"></script>
-<script src="lib/isotope/isotope.pkgd.min.js"></script>
-<script src="lib/lightbox/js/lightbox.min.js"></script>
-
-<!-- Contact Javascript File -->
-<script src="mail/jqBootstrapValidation.min.js"></script>
-<script src="mail/contact.js"></script>
-
-<!-- Template Javascript -->
-<script src="js/main.js"></script>
+    <a href="#" class="btn btn-lg btn-primary back-to-top"><i class="fa fa-angle-double-up"></i></a>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
